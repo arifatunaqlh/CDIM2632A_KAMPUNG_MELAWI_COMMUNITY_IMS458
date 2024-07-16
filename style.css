@@ -1,0 +1,529 @@
+*{ 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Century', sans-serif; 
+} 
+ 
+header{ 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('pictures/beach picture.jpg'); 
+    height: 100vh; 
+    background-size: cover; 
+    background-position: center; 
+    min-height: 100px; 
+} 
+ 
+ul { 
+    float: right; 
+    list-style-type: none; 
+    margin-top: 30px; 
+    margin-right: 60px; 
+    font-size: 17px; 
+} 
+ 
+ul li { 
+    display: inline-block; 
+    position: relative; 
+} 
+ 
+ul li a { 
+    text-decoration: none; 
+    color: #fff; 
+    padding: 5px 20px; 
+    border: 1px solid transparent; 
+    transition: 0.5s ease; 
+} 
+ 
+ul li a:hover { 
+    background-color: #fff; 
+    color: burlywood; 
+} 
+ 
+ul li.active a { 
+    background-color: #fff; 
+    color: burlywood; 
+} 
+ 
+.dropdown-content { 
+    display: none; 
+    position: absolute; 
+    background-color: #333; 
+    min-width: 160px; 
+    z-index: 1; 
+} 
+ 
+.dropdown-content a { 
+    color: white; 
+    padding: 12px 16px; 
+    text-decoration: none; 
+    display: block; 
+    text-align: left; 
+} 
+ 
+.dropdown-content a:hover{ 
+    background-color: #ddd; 
+    color: black; 
+} 
+ 
+.dropdown:hover .dropdown-content{ 
+    display: block; 
+} 
+ 
+.main{ 
+    max-width: 1200px; 
+    margin: auto; 
+} 
+ 
+.title { 
+    position: absolute; 
+    top: 46%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+} 
+ 
+.title h1 { 
+    color: #fff; 
+    font-size: 70px; 
+} 
+ 
+footer { 
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    padding: 10px 0; 
+    margin-top: auto; 
+} 
+ 
+footer p { 
+    margin: 5px 0; 
+    font-size: 15px; 
+    text-align: center; 
+} 
+ 
+.social-icons { 
+    margin: 10px 0; 
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+} 
+ 
+.social-icons a { 
+    color: #fff; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+} 
+ 
+.social-icons a:hover { 
+    color: #f1c40f; 
+} 
+ 
+.social-icons .icon { 
+    width: 24px; 
+    height: 24px; 
+} 
+.logo { 
+    width: 130px; 
+    position: absolute; 
+    top: 20px;  
+    left: 270px; 
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.header .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    width: 80%; 
+    box-sizing: border-box; 
+}
+
+.header h1 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #faee838a; 
+}
+
+.section .left-column,
+.section .right-column {
+    flex: 1;
+}
+
+.section h1 {
+    text-align: center;
+}
+
+.section p {
+    line-height: 1.5; 
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Column styling */
+.left-column,
+.right-column {
+    padding: 10px;
+}
+
+.left-column img,
+.right-column img {
+    width: 100%;
+    height: auto;
+}
+/* Economy Section */
+#Economy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+}
+
+#Economy .left-column {
+    flex: 1;
+    text-align: center; 
+}
+
+#Economy .right-column {
+    flex: 1;
+}
+
+#Economy h1 {
+    text-align: center; 
+}
+
+#Economy p {
+    text-align: justify; 
+    line-height: 1.5; 
+    margin-bottom: 20px;
+}
+
+#Economy img {
+    width: 100%; 
+    height: auto; 
+}
+
+.historical { 
+    background-color: palegoldenrod; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(236, 230, 230, 0.1); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;  
+    margin: 1em auto;  
+    width: 60%;  
+    max-width: 850px; 
+} 
+ 
+ 
+.historical img { 
+    border-radius: 8px 0 0 8px; 
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+} 
+ 
+.historical-details { 
+    padding: 1em; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+} 
+ 
+.historical h2 { 
+    margin: 0 0 0.5em; 
+} 
+ 
+.historical p { 
+    margin: 0.5em 0; 
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.nature {  
+    width: 100%;  
+    padding: 50px 50px;  
+    background-color: rgba(255, 209, 110, 0.877); 
+  } 
+  
+  .nature img {  
+    height: 400px;  
+    width: 350px; 
+  } 
+  
+  .nature-text { 
+    width: 600px; 
+  } 
+  
+  .main {  
+    width: 1130px; 
+    max-width: 95%;  
+    margin: 0 auto;  
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around; 
+  }
+  
+  .nature-text h2 { 
+    color: brown;  
+    font-size: 50px; 
+    text-transform: capitalize;  
+    margin-bottom: 20px; 
+  }
+.nature {  
+    width: 100%;  
+    padding: 50px 50px;  
+    background-color: rgba(237, 228, 170, 0.904); 
+  } 
+  
+  .nature img {  
+    height: 400px;  
+    width: 350px; 
+  } 
+  
+  .nature-text { 
+    width: 600px; 
+  } 
+  
+  .main {  
+    width: 1130px; 
+    max-width: 95%;  
+    margin: 0 auto;  
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around; 
+  }
+  
+  .nature-text h2 { 
+    color: brown;  
+    font-size: 50px; 
+    text-transform: capitalize;  
+    margin-bottom: 20px; 
+  } 
+  
+  .nature-text h5 { 
+    color: rgb(8, 31, 65); 
+    letter-spacing: 2px;  
+    font-size: 30px; 
+    margin-bottom: 25px;  
+    text-transform: capitalize; 
+  }
+  
+  .nature-text p {
+    color: darkolivegreen;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+  }
+  
+section.featured {
+    padding: 5px;
+    background-color: rgb(195, 195, 195);
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+section.featured h2 {
+    margin-top: 0;
+}
+
+.restaurant {
+    display:flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.restaurant img {
+    max-width: 10%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.restaurant div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+.restaurant h3 {
+    margin: 0 0 10px;
+    text-align: left;
+    padding-top: 65px;
+    
+}
+.restaurant p {
+    margin: 15px;
+    padding-top: 35px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.centered-title {
+    text-align: center;
+}
+.greeting {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: wheat;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    width: 80%; 
+    box-sizing: border-box; 
+}
+
+.event {
+    background-color: peachpuff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 3em auto 1em; 
+    width: 60%; 
+    max-width: 650px; 
+}
+
+
+.event img {
+    border-radius: 8px 0 0 8px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.event-details {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event h2 {
+    margin: 0 0 0.5em;
+}
+
+.event p {
+    margin: 0.5em 0;
+}
+/* Google Reviews Section */
+#google-reviews {
+    text-align: center;
+    padding: 20px; 
+}
+
+.review-images img {
+    width: 500px; 
+    height: auto;
+    margin: 4em auto 1em;
+    padding: 20;
+}
+#google-reviews {
+    padding: 50px 20px;
+    text-align: center;
+    position: relative; 
+    color: wheat; 
+}
+
+/* Style for student details section */
+.student-details {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.student-details .profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    flex-shrink: 0; 
+}
+
+.student-details .about-text {
+    flex: 1; 
+    text-align: left; 
+}
+
+.student-details h2 {
+    color: darkolivegreen; 
+    font-size: 24px; 
+    margin-bottom: 10px; 
+}
+
+.student-details p {
+    margin: 8px 0; 
+    line-height: 1.6; 
+}
+
+.student-details ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.student-details ul li {
+    margin-bottom: 10px; 
+    display: flex; 
+    align-items: center; 
+}
+.accommodation { 
+    background-color: darkgrey; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(236, 230, 230, 0.1); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 1em auto; 
+    width: 60%; 
+    max-width: 850px; 
+} 
+ 
+.accommodation img { 
+    border-radius: 8px 0 0 8px; 
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+} 
+ 
+.accommodation-details { 
+    padding: 1em; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+} 
+ 
+.accommodation h2 { 
+    margin: 0 0 0.5em; 
+} 
+ 
+.accommodation p { 
+    margin: 0.5em 0; 
+    text-align: center;
+}
+
+
